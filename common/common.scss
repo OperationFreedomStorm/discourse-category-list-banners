@@ -16,7 +16,7 @@ $nested-list: ();
   @each $id, $color, $heading in $nested-list {
     .category-list-banner.category-#{$id} {
       @include banner;
-      background-color: #{$color};
+      background-image: #{$color};
       &:after {
         @include banner-heading;
         content: $heading;
